@@ -320,7 +320,7 @@ a:hover {
 }
 
 .honor-gallery img.rotate-certificate {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 .honor-gallery figcaption {
