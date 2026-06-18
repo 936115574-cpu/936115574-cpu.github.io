@@ -202,6 +202,53 @@ p {
   border-top: 1px solid var(--line);
 }
 
+.resume-section {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.42fr) minmax(0, 1fr);
+  gap: 42px;
+  width: min(var(--max), calc(100% - 40px));
+  margin: 0 auto;
+  padding: 48px 0;
+  border-top: 1px solid var(--line);
+}
+
+.section-heading h2 {
+  font-size: 1.65rem;
+}
+
+.resume-list {
+  display: grid;
+  gap: 28px;
+}
+
+.resume-entry {
+  padding-left: 22px;
+  border-left: 3px solid var(--accent);
+}
+
+.resume-entry h3 {
+  margin-top: 0;
+  font-size: 1.18rem;
+}
+
+.resume-entry p:last-child {
+  margin-bottom: 0;
+}
+
+.meta {
+  margin-bottom: 4px;
+  color: var(--warm);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.role-line {
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .timeline {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -268,6 +315,36 @@ p {
   margin-top: 8px;
 }
 
+.cv-page {
+  max-width: var(--max);
+}
+
+.cv-section {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);
+  gap: 36px;
+  margin-top: 44px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.cv-section > h2 {
+  font-size: 1.2rem;
+}
+
+.compact-list {
+  margin-top: 0;
+}
+
+.fact-strip {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.fact-strip dd {
+  margin-top: 7px;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -298,9 +375,12 @@ p {
   .hero,
   .section-grid,
   .timeline,
+  .resume-section,
   .content-list,
   .contact-grid,
-  .project-feature {
+  .project-feature,
+  .cv-section,
+  .fact-strip {
     grid-template-columns: 1fr;
   }
 
